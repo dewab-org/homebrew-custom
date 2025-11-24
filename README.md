@@ -1,19 +1,43 @@
 # My Homebrew Custom Packages
 
-## To use
+Custom tap for a few tools I rely on but are not available (or current enough) in Homebrew core.
 
-```% brew tap dewab/custom```
+## Quick start
 
-## To install sshpass
+```sh
+brew tap dewab/custom
+```
 
-```% brew install dewab/custom/sshpass```
+Install packages directly from the tap:
 
-## Package list
+```sh
+# Formulas
+brew install dewab/custom/sshpass
+brew install dewab/custom/mping
 
-### Formulas
+# Casks
+brew install --cask dewab/custom/dockutil
+```
 
-**sshpass** -- Because homebrew excludes for security reasons, and I need it occassionally for ansible.
+## Packages
 
-### Casks
+- **sshpass** (formula) — Enables non-interactive SSH password auth (use cautiously; SSH keys are preferred).
+- **mping** (formula) — Terminal UI for multi-host ping monitoring with theming and manpage support.
+- **dockutil** (cask) — Newer dockutil pkg for automating macOS dock changes (used by Geerlingguy's dock role).
 
-**dockutil** -- Need a newer version of dockutil than Homebrew provides for Geerlingguy's dock ansible role.
+## Development
+
+- Style checks: `brew style Formula/*.rb Casks/*.rb`
+- Audits: `brew audit --strict --online Formula/*.rb` and `brew audit --cask --online Casks/*.rb`
+
+### Pre-commit (optional)
+
+1. `pipx install pre-commit` (or `pip install pre-commit`)
+2. `pre-commit install`
+3. Commit as usual; `brew style` and `brew audit` will run on changed formulas/casks.
+
+You can run the checks manually at any time with:
+
+```sh
+pre-commit run --all-files
+```

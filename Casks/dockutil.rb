@@ -10,4 +10,9 @@ cask "dockutil" do
   pkg "dockutil-#{version}.pkg"
 
   uninstall pkgutil: "dockutil.cli.tool"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 end

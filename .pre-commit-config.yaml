@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: brew-style-audit
+        name: Brew style & audit (formulae/casks)
+        entry: scripts/run-brew-checks.sh
+        language: system
+        files: '^(Formula|Casks)/.*\.rb$'
+        pass_filenames: true

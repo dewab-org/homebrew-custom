@@ -1,0 +1,17 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor swap/backup files
+*~
+*.swp
+*.swo
+
+# IDE settings
+.idea/
+.vscode/
+
+# Ruby/Homebrew helpers
+/.bundle/
+/.brew_home/
+/vendor/
