@@ -5,18 +5,18 @@ Custom tap for a few tools I rely on but are not available (or current enough) i
 ## Quick start
 
 ```sh
-brew tap dewab/custom
+brew tap dewab-org/custom
 ```
 
 Install packages directly from the tap:
 
 ```sh
 # Formulas
-brew install dewab/custom/sshpass
-brew install dewab/custom/mping
+brew install dewab-org/custom/sshpass
+brew install dewab-org/custom/mping
 
 # Casks
-brew install --cask dewab/custom/dockutil
+brew install --cask dewab-org/custom/dockutil
 ```
 
 ## Packages

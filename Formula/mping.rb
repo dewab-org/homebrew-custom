@@ -1,10 +1,10 @@
 class Mping < Formula
   desc "Terminal UI for multi-host ping monitoring"
-  homepage "https://github.com/dewab/mping"
-  url "https://github.com/dewab/mping/archive/refs/tags/v0.0.2.tar.gz"
+  homepage "https://github.com/dewab-org/mping"
+  url "https://github.com/dewab-org/mping/archive/refs/tags/v0.0.2.tar.gz"
   sha256 "6488d6e6057fb1021900f79d10b675e1f1448668d5f650e289b06b416d93351c"
   license :cannot_represent
-  head "https://github.com/dewab/mping.git", branch: "main"
+  head "https://github.com/dewab-org/mping.git", branch: "main"
 
   depends_on "go" => :build
 

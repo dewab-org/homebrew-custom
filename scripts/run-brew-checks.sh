@@ -10,11 +10,11 @@ for path in "$@"; do
   case "$path" in
     Formula/*.rb)
       formula_paths+=("$path")
-      formula_names+=("dewab/custom/$(basename "${path%.rb}")")
+      formula_names+=("dewab-org/custom/$(basename "${path%.rb}")")
       ;;
     Casks/*.rb)
       cask_paths+=("$path")
-      cask_names+=("dewab/custom/$(basename "${path%.rb}")")
+      cask_names+=("dewab-org/custom/$(basename "${path%.rb}")")
       ;;
   esac
 done
