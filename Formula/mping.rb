@@ -1,8 +1,8 @@
 class Mping < Formula
   desc "Terminal UI for multi-host ping monitoring"
   homepage "https://github.com/dewab-org/mping"
-  url "https://github.com/dewab-org/mping/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "f816f934d3d480f776ad89d73eb5b68b0e898fc9e94e15ae8696d02d650eebb1"
+  url "https://github.com/dewab-org/mping/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "8ae3fb41a2ad02fb9f281238e7bc47684d3a01b9ea0ea136b08ce80b3e12def8"
   license :cannot_represent
   head "https://github.com/dewab-org/mping.git", branch: "main"
 
