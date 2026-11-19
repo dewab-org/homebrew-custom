@@ -32,7 +32,8 @@ brew install --cask dewab-org/custom/dockutil
 `master` is protected by repository rulesets: it cannot be deleted or
 force-pushed, so changes are pushed as normal fast-forward commits. `v*`
 tags, if any are ever used, can only be created by admins and can never
-be moved or deleted.
+be moved or deleted. GitHub secret scanning with push protection is on, so a
+push containing a recognised credential is refused.
 
 `Formula/hme.rb` is updated automatically: each release of
 [hide-my-email](https://github.com/dewab74/hide-my-email) pushes it here
