@@ -14,6 +14,7 @@ Install packages directly from the tap:
 # Formulas
 brew install dewab-org/custom/sshpass
 brew install dewab-org/custom/mping
+brew install dewab-org/custom/hme
 
 # Casks
 brew install --cask dewab-org/custom/dockutil
@@ -23,6 +24,7 @@ brew install --cask dewab-org/custom/dockutil
 
 - **sshpass** (formula) — Enables non-interactive SSH password auth (use cautiously; SSH keys are preferred).
 - **mping** (formula) — Terminal UI for multi-host ping monitoring with theming and manpage support.
+- **hme** (formula) — CLI for iCloud Hide My Email addresses: generate, list and delete them, with optional 1Password integration.
 - **dockutil** (cask) — Newer dockutil pkg for automating macOS dock changes (used by Geerlingguy's dock role).
 
 ## Development
