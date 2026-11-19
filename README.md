@@ -29,6 +29,16 @@ brew install --cask dewab-org/custom/dockutil
 
 ## Development
 
+`master` is protected by repository rulesets: it cannot be deleted or
+force-pushed, so changes are pushed as normal fast-forward commits. `v*`
+tags, if any are ever used, can only be created by admins and can never
+be moved or deleted.
+
+`Formula/hme.rb` is updated automatically: each release of
+[hide-my-email](https://github.com/dewab74/hide-my-email) pushes it here
+through a deploy key that can write to this repository only. Edit it in
+that project's `scripts/update-formula.sh`, not here.
+
 - Style checks: `brew style Formula/*.rb Casks/*.rb`
 - Audits: `brew audit --strict --online Formula/*.rb` and `brew audit --cask --online Casks/*.rb`
 
