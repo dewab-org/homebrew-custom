@@ -33,7 +33,9 @@ brew install --cask dewab-org/custom/dockutil
 force-pushed, so changes are pushed as normal fast-forward commits. `v*`
 tags, if any are ever used, can only be created by admins and can never
 be moved or deleted. GitHub secret scanning with push protection is on, so a
-push containing a recognised credential is refused.
+push containing a recognised credential is refused. CodeQL code scanning
+checks the Ruby on every push and weekly, and Dependabot alerts and
+security updates are on.
 
 `Formula/hme.rb` is updated automatically: each release of
 [hide-my-email](https://github.com/dewab74/hide-my-email) pushes it here
