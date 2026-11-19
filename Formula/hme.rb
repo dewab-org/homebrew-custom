@@ -10,23 +10,23 @@ class Hme < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.4/hme_0.1.4_darwin_arm64.tar.gz"
-      sha256 "685e25db7d5cd4a74e238b9e75c611187d8e68c07b6cda0c4428995b0e31b707"
+      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.5/hme_0.1.5_darwin_arm64.tar.gz"
+      sha256 "67061479207c8fdb804e5783602430eaaba6c8ee03607f26f7f952bb09d2d32e"
     end
     on_intel do
-      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.4/hme_0.1.4_darwin_amd64.tar.gz"
-      sha256 "93fac8dd718b436fea83864e2e81794788244e9ce1b867d8729215a256004f9c"
+      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.5/hme_0.1.5_darwin_amd64.tar.gz"
+      sha256 "9428aecad57b2f5eaba02230b73296f803b9fdac017b12567eb14d6aeb4b93f8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.4/hme_0.1.4_linux_arm64.tar.gz"
-      sha256 "1799f3270893186e50deb590763bb71588a24ea389fe214b79a44f33a322ba56"
+      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.5/hme_0.1.5_linux_arm64.tar.gz"
+      sha256 "966fe3ba824d6f798157792151edb6ccb2e110e82b2e8bc91e486d482997ce06"
     end
     on_intel do
-      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.4/hme_0.1.4_linux_amd64.tar.gz"
-      sha256 "6bbb25e3d99727e8fb0abdc84e510622081a6c14f515650943360115f1ac6b01"
+      url "https://github.com/dewab74/hide-my-email/releases/download/v0.1.5/hme_0.1.5_linux_amd64.tar.gz"
+      sha256 "5f1206acbd2b2afad56b3fadaebf3d8d15b131dd65ad0057bc7d296d10bdcd23"
     end
   end
 
