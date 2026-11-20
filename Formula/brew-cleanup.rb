@@ -3,8 +3,8 @@ class BrewCleanup < Formula
 
   desc "Interactive Homebrew package removal with history and undo"
   homepage "https://github.com/dewab74/brew-cleanup"
-  url "https://github.com/dewab74/brew-cleanup/releases/download/v0.1.0/brew-cleanup-0.1.0.tar.gz"
-  sha256 "3a7d6e78c028279f46888be8b0117146affbf7f2a322319eb8763da26d74683a"
+  url "https://github.com/dewab74/brew-cleanup/releases/download/v0.1.1/brew-cleanup-0.1.1.tar.gz"
+  sha256 "de4ca32fa8993093e910162ecc99d3ed0641e73646293407e15257aa9559763f"
   license "MIT"
 
   livecheck do
