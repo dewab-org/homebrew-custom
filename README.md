@@ -15,6 +15,7 @@ Install packages directly from the tap:
 brew install dewab-org/custom/sshpass
 brew install dewab-org/custom/mping
 brew install dewab-org/custom/hme
+brew install dewab-org/custom/brew-cleanup
 
 # Casks
 brew install --cask dewab-org/custom/dockutil
@@ -25,6 +26,7 @@ brew install --cask dewab-org/custom/dockutil
 - **sshpass** (formula) — Enables non-interactive SSH password auth (use cautiously; SSH keys are preferred).
 - **mping** (formula) — Terminal UI for multi-host ping monitoring with theming and manpage support.
 - **hme** (formula) — CLI for iCloud Hide My Email addresses: generate, list and delete them, with optional 1Password integration.
+- **brew-cleanup** (formula) — Terminal browser for removing installed Homebrew packages, with dependency trees, history and undo.
 - **dockutil** (cask) — Newer dockutil pkg for automating macOS dock changes (used by Geerlingguy's dock role).
 
 ## Development
@@ -37,10 +39,12 @@ push containing a recognised credential is refused. CodeQL code scanning
 checks the Ruby on every push and weekly, and Dependabot alerts and
 security updates are on.
 
-`Formula/hme.rb` is updated automatically: each release of
-[hide-my-email](https://github.com/dewab74/hide-my-email) pushes it here
-through a deploy key that can write to this repository only. Edit it in
-that project's `scripts/update-formula.sh`, not here.
+`Formula/hme.rb` and `Formula/brew-cleanup.rb` are updated automatically:
+each release of [hide-my-email](https://github.com/dewab74/hide-my-email) or
+[brew-cleanup](https://github.com/dewab74/brew-cleanup) pushes its formula
+here through a deploy key that can write to this repository only. Edit them
+in those projects (`scripts/update-formula.sh` and
+`scripts/build_release.py`), not here.
 
 - Style checks: `brew style Formula/*.rb Casks/*.rb`
 - Audits: `brew audit --strict --online Formula/*.rb` and `brew audit --cask --online Casks/*.rb`
